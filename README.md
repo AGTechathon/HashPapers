@@ -1,54 +1,124 @@
-# React + TypeScript + Vite
+# 📚 HashPapers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A decentralized platform to upload, verify, and store research papers securely using blockchain (via IPFS & Pinata) with built-in AI-based plagiarism detection.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 *Decentralized Storage:* Upload papers to IPFS via Pinata
+- 🤖 *AI Plagiarism Detection:* Automatically checks paper originality
+- 💼 *Web3 Wallet Integration:* Connect using MetaMask
+- 🧠 *Smart Search & Filter:* Query papers by author, title, tags
+- 🔎 *Research Transparency:* Publicly accessible, tamper-proof records
+- ⚡ *Vite + React + TypeScript:* Blazing fast frontend stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Tech              | Purpose                          |
+|------------------|----------------------------------|
+| *Vite*         | Frontend bundler                 |
+| *React*        | UI framework                     |
+| *TypeScript*   | Type safety                      |
+| *Pinata/IPFS*  | Decentralized file storage       |
+| *OpenAI API*   | AI plagiarism detection          |
+| *Ethers.js*    | Ethereum wallet & smart contract |
+| *React Query*  | Data fetching & caching          |
+| *ShadCN/UI*    | Styled component library         |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🖥 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/HashPapers.git
+cd HashPapers
+
+2. Install dependencies
+
+npm install
+
+3. Configure environment
+
+Create .env file in the root:
+
+VITE_PINATA_API_KEY=your_pinata_key
+VITE_PINATA_SECRET_API_KEY=your_pinata_secret
+VITE_OPENAI_API_KEY=your_openai_key
+
+4. Run locally
+
+npm run dev
+
+
+---
+
+🧪 How It Works
+
+1. Upload Paper → Sent to IPFS via Pinata API
+
+
+2. Run AI Plagiarism Check → Uses OpenAI or HuggingFace models
+
+
+3. Store Metadata → Onchain hash + metadata stored on Ethereum
+
+
+4. Explore Papers → Search, view, and verify paper originality
+
+
+
+
+---
+
+📁 Project Structure
+
+src/
+├── components/
+│   └── ui/           # UI components (e.g., Toaster, Button)
+│   └── layout/       # App layout
+│   └── providers/    # Context providers (e.g., Web3)
+├── routes/           # App routes
+├── utils/            # Helper functions (upload to Pinata, etc.)
+├── App.tsx           # Main app entry
+├── main.tsx          # Root render file
+
+
+---
+
+🛡 Security & Trust
+
+🗂 Papers stored via IPFS: immutable & decentralized
+
+📜 Hash stored on blockchain: verifiable & tamper-proof
+
+🧠 AI plagiarism check: provides trust and transparency
+
+
+
+---
+
+📄 License
+
+MIT © 2025 HashPapers Team
+
+
+---
+
+🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+
+---
+
+📬 Contact
+
+Made with ❤ at a hackathon.
+DM [@sidrampotdar] or open an issue if you have any questions!
+
+-
