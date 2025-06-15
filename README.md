@@ -115,6 +115,6 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 📬 Contact
 
 Made with ❤ at a hackathon.
-DM [@sidrampotdar] or open an issue if you have any questions!
+
 
 -
