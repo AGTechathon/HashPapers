@@ -61,7 +61,7 @@ npm run dev
 2. Run AI Plagiarism Check → Uses OpenAI or HuggingFace models
 
 
-3. Store Metadata → Onchain hash + metadata stored on Ethereum
+3. Store Metadata → Onchain hash + metadata stored 
 
 
 4. Explore Papers → Search, view, and verify paper originality
@@ -116,5 +116,3 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 Made with ❤ at a hackathon.
 
-
--
