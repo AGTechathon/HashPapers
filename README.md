@@ -24,10 +24,6 @@ A decentralized platform to upload, verify, and store research papers securely u
 | *TypeScript*   | Type safety                      |
 | *Pinata/IPFS*  | Decentralized file storage       |
 | *OpenAI API*   | AI plagiarism detection          |
-| *Ethers.js*    | Ethereum wallet & smart contract |
-| *React Query*  | Data fetching & caching          |
-| *ShadCN/UI*    | Styled component library         |
-
 ---
 
 ## 🖥 Getting Started
